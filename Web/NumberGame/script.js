@@ -14,12 +14,12 @@ async function loadNumber(){
 	for(var i = 0; i < numbers.length; i++) {
 		e = numbers[i];
 		e.style.left = (8 + e.innerHTML*8) + "%";
-		e.style.top = "15vh";
+		e.style.top = "18vh";
 		await sleep(300);
 	}
 }
 function clickNumber(e){
-	if(e.style.top != `15vh` || isEnd) return;
+	if(e.style.top != `18vh` || isEnd) return;
 	let move = Math.floor(turn/2)*6;
 	e.style.top = '40vh';
 	if(turn % 2){
