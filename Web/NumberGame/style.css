@@ -3,7 +3,7 @@
   max-width: 70px;
   aspect-ratio : 1 / 1;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 3vw;
   background-color: tomato;
   transition: all .8s ease;
   position: absolute;
@@ -23,7 +23,7 @@ section {
 }
 
 .gtitle {
-    font-size: 500%;
+    font-size: 4.5vw;
     color: #d7a32f;
     margin: 3% auto;
 }
@@ -38,12 +38,11 @@ section {
 }
 
 .gstatus {
-    font-size: 300%;
+    font-size: 4.5vw;
     color: #d7a32f;
     margin: 3% auto;
 	bottom: 0%;
-    position: fixed;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	left: 50vw;
 	white-space: pre-line;
+	padding: 60vh 0;
 }

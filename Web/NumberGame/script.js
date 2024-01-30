@@ -14,14 +14,14 @@ async function loadNumber(){
 	for(var i = 0; i < numbers.length; i++) {
 		e = numbers[i];
 		e.style.left = (8 + e.innerHTML*8) + "%";
-		e.style.top = "15%";
+		e.style.top = "15vh";
 		await sleep(300);
 	}
 }
 function clickNumber(e){
-	if(e.style.top != `15%` || isEnd) return;
+	if(e.style.top != `15vh` || isEnd) return;
 	let move = Math.floor(turn/2)*6;
-	e.style.top = '40%';
+	e.style.top = '40vh';
 	if(turn % 2){
 		move+=leftOffset;
 		phe1.push(e.innerHTML*1);

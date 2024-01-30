@@ -8,19 +8,28 @@ section {
 
 .cell {
     font-family: "Arial", sans-serif;
-    width: 100%;
+    width: 12vw;
+	height: 12vw;
 	max-width: 100px;
-    aspect-ratio : 1 / 1;
+	max-height: 100px;
     border: 2px solid #ffc830;
     cursor: pointer;
-    line-height: 150%;
-    font-size: 400%;
+    line-height: 12vw;
+    font-size: 8vw;
+	justify-content: center;
+	align-items: center;
 	color: #f2eddf;
+}
+@media screen and (min-width: 1200px) {
+  .cell {
+     font-size: 90px;
+	 line-height: 100px;
+  }
 }
 
 
 .gtitle {
-    font-size: 500%;
+    font-size: 4.5vw;
     color: #d7a32f;
     margin: 3% auto;
 }
@@ -28,20 +37,19 @@ section {
 .gcontainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 30%;
+    width: 36vw;
 	max-width: 302px;
-    margin: 3% auto;
+	aspect-ratio : 1 / 1;
+    margin: 2vw auto;
     background-color: #11215a;
     color: #04c0b2;
 }
 
 .gstatus {
-    font-size: 300%;
+    font-size: 4.5vw;
     color: #d7a32f;
     margin: 3% auto;
 	bottom: 0%;
-    position: fixed;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	left: 50vw;
 	white-space: pre-line;
 }
