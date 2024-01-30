@@ -1,18 +1,24 @@
 .number{
-  width: 6%;
+  width: 6vw;
+  max-height: 6vw;
   max-width: 70px;
-  aspect-ratio : 1 / 1;
+  max-height: 70px
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 4.5vw;
   background-color: tomato;
   transition: all .8s ease;
   position: absolute;
-  top: 300%;
-  left: 50%;
-  border-radius: 60%;
+  top: 300vh;
+  left: 50vw;
+  border-radius: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .number {
+     font-size: 55px;
+  }
 }
 button{
-  margin: 2% 0;
+  margin: 2vw 0;
 }
 body {
     font-family: "Arial", sans-serif;
@@ -25,14 +31,14 @@ section {
 .gtitle {
     font-size: 4.5vw;
     color: #d7a32f;
-    margin: 3% auto;
+    margin: 3vw auto;
 }
 
 .gcontainer {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 80%;
-    margin: 3% auto;
+    width: 80vw;
+    margin: 3vw auto;
     background-color: #11215a;
     color: #04c0b2;
 }
@@ -40,9 +46,9 @@ section {
 .gstatus {
     font-size: 4.5vw;
     color: #d7a32f;
-    margin: 3% auto;
+    margin: 3vw auto;
 	bottom: 0%;
 	left: 50vw;
 	white-space: pre-line;
-	padding: 60vh 0;
+	padding: 50vh 0;
 }
