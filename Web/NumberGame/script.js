@@ -1,8 +1,8 @@
 const gstatus = document.getElementsByClassName("gstatus")[0];
 var isEnd = false;
 var turn = 0;
-const leftOffset = 200;
-const rightOffset = 1550;
+const leftOffset = 10;
+const rightOffset = 90;
 var phe1 = [];
 var phe2 = [];
 window.onload = function(){
@@ -13,15 +13,15 @@ async function loadNumber(){
 	var numbers = document.getElementsByClassName("number");
 	for(var i = 0; i < numbers.length; i++) {
 		e = numbers[i];
-		e.style.left = (200 + e.innerHTML*125) + "px";
-		e.style.top = 100 + "px";
+		e.style.left = (8 + e.innerHTML*8) + "%";
+		e.style.top = "15%";
 		await sleep(300);
 	}
 }
 function clickNumber(e){
-	if(e.style.top != `100px` || isEnd) return;
-	let move = Math.floor(turn/2)*100;
-	e.style.top = 300 + 'px';
+	if(e.style.top != `15%` || isEnd) return;
+	let move = Math.floor(turn/2)*6;
+	e.style.top = '40%';
 	if(turn % 2){
 		move+=leftOffset;
 		phe1.push(e.innerHTML*1);
@@ -29,7 +29,7 @@ function clickNumber(e){
 		move=rightOffset-move;
 		phe2.push(e.innerHTML*1);
 	}
-	e.style.left = move + 'px';
+	e.style.left = move + '%';
 	nextTurn();
 }
 function nextTurn(){
