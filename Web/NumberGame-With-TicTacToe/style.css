@@ -1,0 +1,40 @@
+body {
+    font-family: "Arial", sans-serif;
+}
+
+section {
+    text-align: center;
+}
+
+.cell {
+    font-family: "Arial", sans-serif;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffc830;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+	color: #f2eddf;
+}
+
+.gtitle {
+    font-size: 100px;
+    color: #d7a32f;
+    margin: 10px auto;
+}
+
+.gcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+    background-color: #11213a;
+    color: #04c0b2;
+}
+
+.gstatus {
+    font-size: 50px;
+    color: #d7a32f;
+    margin: 20px auto;
+	white-space: pre-line;
+}	
