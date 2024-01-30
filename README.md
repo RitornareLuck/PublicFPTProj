@@ -3,7 +3,7 @@ Những dự án khi học tại FPT
 
 #Number Game
 
-Play: 
+Play: https://main--az123.netlify.app/web/numbergame-with-tictactoe/index.html
 Source: https://github.com/RitornareLuck/PublicFPTProj/tree/main/Web/NumberGame
 ![image](https://github.com/RitornareLuck/PublicFPTProj/assets/94127994/f954a4cf-6dea-482c-bc48-7bd62084104f)
 ![image](https://github.com/RitornareLuck/PublicFPTProj/assets/94127994/0e15c9dc-2702-4c51-9907-459b7790ef52)
