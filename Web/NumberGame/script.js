@@ -6,8 +6,7 @@ const rightOffset = 90;
 var phe1 = [];
 var phe2 = [];
 window.onload = function(){
-	loadNumber()
-	nextTurn()
+	initGame()
 }
 async function loadNumber(){
 	var numbers = document.getElementsByClassName("number");
@@ -68,3 +67,12 @@ function calculateScore(numbers){
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+function initGame(){
+	turn = 0
+	isEnd = false
+	phe1 = []
+	phe2 = []
+	loadNumber()
+	nextTurn()
+}
+document.querySelector('.grestart').addEventListener('click', initGame);

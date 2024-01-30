@@ -57,3 +57,12 @@ function calculateScore(numbers){
 
 
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', onClick));
+function initGame(){
+	turn = 0
+	isEnd = false
+	phe1 = []
+	phe2 = []
+	document.querySelectorAll('.cell').forEach(cell => cell.style.color = "");
+	nextTurn()
+}
+document.querySelector('.grestart').addEventListener('click', initGame);

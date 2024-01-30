@@ -44,12 +44,24 @@ section {
     background-color: #11215a;
     color: #04c0b2;
 }
-
 .gstatus {
     font-size: 4.5vw;
     color: #d7a32f;
-    margin: 3% auto;
+    margin: 3vw auto;
 	bottom: 0%;
 	left: 50vw;
 	white-space: pre-line;
+}
+.grestart {
+    background-color: #f7e4ac;
+    width: 12vw;
+    height: 5vw;
+    font-size: 3vw;
+    color: #5586e2;
+    box-shadow: 2px 2px 2px 2px #d86c23;
+    border: 2px solid #d86e43;
+	position: absolute;
+	top: 80vh;
+	left: 10vw;
+	transform: translate(-50%, 0);
 }
